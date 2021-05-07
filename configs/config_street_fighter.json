@@ -1,0 +1,23 @@
+{
+    "game": "SuperStreetFighter2-Snes",
+    "algos": ["A2C", "PPO"],
+    "train_states": ["ryu_vs_thawk_highest_difficulty.state", "ryu_vs_cammy_highest_difficulty.state", "ryu_vs_gulie_highest_difficulty.state", "ryu_vs_ken_highest_difficulty.state", "ryu_vs_dee_jay_highest_difficulty.state"],
+    "eval_state": ["ryu_vs_fei_long_highest_difficulty.state", "ryu_vs_fei_long_normal_difficulty.state", "ryu_vs_fei_long_easy_difficulty.state"],
+
+    "agents_config": {
+        "A2C": {
+            "policy": "CnnPolicy",
+            "n_steps": 128,
+            "verbose": 1,
+            "tensorboard":"tensorboard_logs/street_fighter/a2c",
+            "save_path": "my_models/street_fighter/Fighter_a2c"
+        },
+        "PPO": {
+            "policy": "CnnPolicy",
+            "n_steps": 128,
+            "verbose": 1,
+            "tensorboard":"tensorboard_logs/street_fighter/ppo",
+            "save_path": "my_models/street_fighter/Fighter_ppo"
+        }
+    }
+}

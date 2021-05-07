@@ -1,0 +1,27 @@
+{
+    "game": "PongNoFrameskip-v4",
+    "algos": ["A2C", "PPO", "DQN"],
+    "train_states": ["Start.state"],
+    "eval_state": ["Start.state", "Start.2P.state"],
+
+    "agents_config": {
+        "A2C": {
+            "policy": "CnnPolicy",
+            "verbose": 1,
+            "tensorboard":"tensorboard_logs/pong/a2c",
+            "save_path": "my_models/pong/pong_a2c/"
+        },
+        "PPO": {
+            "policy": "CnnPolicy",
+            "verbose": 1,
+            "tensorboard":"tensorboard_logs/pong/ppo",
+            "save_path": "my_models/pong/pong_ppo/"
+        },
+        "DQN": {
+            "policy": "CnnPolicy",
+            "verbose": 1,
+            "tensorboard":"tensorboard_logs/pong/dqn",
+            "save_path": "my_models/pong/pong_dqn/"
+        }
+    }
+}

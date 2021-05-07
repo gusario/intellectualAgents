@@ -1,0 +1,2 @@
+class UnexpectedAgentException(Exception):
+    pass
