@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+.vscode
+my_models/*
+myvenv
+tensorboard_logs/*
+videos/*
+evaluate_results/*
+src/__pycache__
+playground_mario/__pycache__
+playground_pong/__pycache__
+playground_streeet_fighter/__pycache__
+playground_streeet_fighter/.ipynb_checkpoints
